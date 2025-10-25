@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-orange-300: oklch(83.7% 0.128 66.29);
     --color-green-500: oklch(72.3% 0.219 149.579);
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -167,20 +168,50 @@
   }
 }
 @layer utilities {
+  .m-auto {
+    margin: auto;
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
   .mt-2\.5 {
     margin-top: calc(var(--spacing) * 2.5);
+  }
+  .mb-\[30px\] {
+    margin-bottom: 30px;
   }
   .flex {
     display: flex;
   }
+  .table {
+    display: table;
+  }
   .h-9 {
     height: calc(var(--spacing) * 9);
+  }
+  .h-\[38px\] {
+    height: 38px;
+  }
+  .w-\[90\%\] {
+    width: 90%;
+  }
+  .w-\[90\] {
+    width: 90;
   }
   .w-\[190px\] {
     width: 190px;
   }
+  .w-\[900px\] {
+    width: 900px;
+  }
   .w-full {
     width: 100%;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
   }
   .items-center {
     align-items: center;
@@ -188,11 +219,21 @@
   .justify-around {
     justify-content: space-around;
   }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
   .gap-2\.5 {
     gap: calc(var(--spacing) * 2.5);
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .bg-green-500 {
     background-color: var(--color-green-500);
@@ -211,12 +252,39 @@
   .text-white {
     color: var(--color-white);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .opacity-\[0\.4\] {
+    opacity: 0.4;
+  }
   .opacity-\[0\.5\] {
     opacity: 0.5;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+  .hover\:text-orange-300 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-orange-300);
+      }
+    }
+  }
+  .xs\:block {
+    @media (width >= 350px) {
+      display: block;
+    }
   }
   .xs\:hidden {
     @media (width >= 350px) {
       display: none;
+    }
+  }
+  .xl\:block {
+    @media (width >= 550px) {
+      display: block;
     }
   }
   .xl\:hidden {
@@ -224,15 +292,37 @@
       display: none;
     }
   }
+  .xxl\:flex {
+    @media (width >= 850px) {
+      display: flex;
+    }
+  }
+  .xxl\:hidden {
+    @media (width >= 850px) {
+      display: none;
+    }
+  }
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
     }
   }
 }
