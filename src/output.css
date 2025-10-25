@@ -905,6 +905,26 @@
       height: 569px;
     }
   }
+  .xxl\:h-\[600px\] {
+    @media (width >= 850px) {
+      height: 600px;
+    }
+  }
+  .xxl\:h-\[700px\] {
+    @media (width >= 850px) {
+      height: 700px;
+    }
+  }
+  .xxl\:h-\[750px\] {
+    @media (width >= 850px) {
+      height: 750px;
+    }
+  }
+  .xxl\:h-\[800px\] {
+    @media (width >= 850px) {
+      height: 800px;
+    }
+  }
   .xxl\:w-\[0px\] {
     @media (width >= 850px) {
       width: 0px;
