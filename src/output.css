@@ -8,6 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-green-50: oklch(98.2% 0.018 155.826);
+    --color-green-400: oklch(79.2% 0.209 151.711);
     --color-green-500: oklch(72.3% 0.219 149.579);
     --color-green-600: oklch(62.7% 0.194 149.214);
     --color-green-700: oklch(52.7% 0.154 150.069);
@@ -23,6 +24,8 @@
     --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
+    --text-8xl: 6rem;
+    --text-8xl--line-height: 1;
     --font-weight-bold: 700;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
@@ -197,6 +200,9 @@
   .mt-\[50px\] {
     margin-top: 50px;
   }
+  .mt-\[200px\] {
+    margin-top: 200px;
+  }
   .mb-\[30px\] {
     margin-bottom: 30px;
   }
@@ -230,11 +236,23 @@
   .h-\[38px\] {
     height: 38px;
   }
+  .h-\[262px\] {
+    height: 262px;
+  }
   .h-\[306pc\] {
     height: 306pc;
   }
   .h-\[306px\] {
     height: 306px;
+  }
+  .h-\[319\] {
+    height: 319;
+  }
+  .h-\[319px\] {
+    height: 319px;
+  }
+  .h-\[373px\] {
+    height: 373px;
   }
   .h-\[401px\] {
     height: 401px;
@@ -281,6 +299,9 @@
   .w-\[18px\] {
     width: 18px;
   }
+  .w-\[80\%\] {
+    width: 80%;
+  }
   .w-\[90\%\] {
     width: 90%;
   }
@@ -295,6 +316,9 @@
   }
   .w-\[270px\] {
     width: 270px;
+  }
+  .w-\[295px\] {
+    width: 295px;
   }
   .w-\[504px\] {
     width: 504px;
@@ -332,6 +356,9 @@
   .gap-2\.5 {
     gap: calc(var(--spacing) * 2.5);
   }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
@@ -360,6 +387,9 @@
   .bg-green-50 {
     background-color: var(--color-green-50);
   }
+  .bg-green-400 {
+    background-color: var(--color-green-400);
+  }
   .bg-green-500 {
     background-color: var(--color-green-500);
   }
@@ -368,6 +398,12 @@
   }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
+  .p-2\.5 {
+    padding: calc(var(--spacing) * 2.5);
   }
   .pt-2 {
     padding-top: calc(var(--spacing) * 2);
@@ -386,6 +422,15 @@
   }
   .pt-\[80px\] {
     padding-top: 80px;
+  }
+  .pt-\[100px\] {
+    padding-top: 100px;
+  }
+  .pt-\[200px\] {
+    padding-top: 200px;
+  }
+  .pt-\[300px\] {
+    padding-top: 300px;
   }
   .pb-2 {
     padding-bottom: calc(var(--spacing) * 2);
@@ -408,6 +453,10 @@
   .text-6xl {
     font-size: var(--text-6xl);
     line-height: var(--tw-leading, var(--text-6xl--line-height));
+  }
+  .text-8xl {
+    font-size: var(--text-8xl);
+    line-height: var(--tw-leading, var(--text-8xl--line-height));
   }
   .text-\[10px\] {
     font-size: 10px;
@@ -446,8 +495,17 @@
   .opacity-\[0\.5\] {
     opacity: 0.5;
   }
+  .opacity-\[0\.7\] {
+    opacity: 0.7;
+  }
   .opacity-\[0\.9\] {
     opacity: 0.9;
+  }
+  .opacity-\[0\.\] {
+    opacity: 0.;
+  }
+  .opacity-\[09\] {
+    opacity: 09;
   }
   .outline {
     outline-style: var(--tw-outline-style);
@@ -568,9 +626,24 @@
       height: 306px;
     }
   }
+  .xs\:h-\[319px\] {
+    @media (width >= 350px) {
+      height: 319px;
+    }
+  }
   .xs\:h-\[373px\] {
     @media (width >= 350px) {
       height: 373px;
+    }
+  }
+  .xs\:h-\[518px\] {
+    @media (width >= 350px) {
+      height: 518px;
+    }
+  }
+  .xs\:h-\[1500px\] {
+    @media (width >= 350px) {
+      height: 1500px;
     }
   }
   .xs\:h-\[1800px\] {
@@ -596,6 +669,11 @@
   .xs\:w-\[300px\] {
     @media (width >= 350px) {
       width: 300px;
+    }
+  }
+  .xs\:w-\[318px\] {
+    @media (width >= 350px) {
+      width: 318px;
     }
   }
   .xs\:w-\[380px\] {
@@ -706,9 +784,19 @@
       display: none;
     }
   }
+  .xl\:h-\[275px\] {
+    @media (width >= 600px) {
+      height: 275px;
+    }
+  }
   .xl\:h-\[306px\] {
     @media (width >= 600px) {
       height: 306px;
+    }
+  }
+  .xl\:h-\[319px\] {
+    @media (width >= 600px) {
+      height: 319px;
     }
   }
   .xl\:h-\[373px\] {
@@ -721,9 +809,19 @@
       height: 539px;
     }
   }
+  .xl\:h-\[910px\] {
+    @media (width >= 600px) {
+      height: 910px;
+    }
+  }
   .xl\:h-\[1800px\] {
     @media (width >= 600px) {
       height: 1800px;
+    }
+  }
+  .xl\:h-\[px\] {
+    @media (width >= 600px) {
+      height: px;
     }
   }
   .xl\:w-\[3px\] {
@@ -744,6 +842,11 @@
   .xl\:w-\[300px\] {
     @media (width >= 600px) {
       width: 300px;
+    }
+  }
+  .xl\:w-\[318px\] {
+    @media (width >= 600px) {
+      width: 318px;
     }
   }
   .xl\:w-\[330px\] {
@@ -779,6 +882,21 @@
   .xl\:w-\[380px\] {
     @media (width >= 600px) {
       width: 380px;
+    }
+  }
+  .xl\:w-\[445px\] {
+    @media (width >= 600px) {
+      width: 445px;
+    }
+  }
+  .xl\:w-\[708\] {
+    @media (width >= 600px) {
+      width: 708;
+    }
+  }
+  .xl\:w-\[708px\] {
+    @media (width >= 600px) {
+      width: 708px;
     }
   }
   .xl\:flex-nowrap {
@@ -880,9 +998,24 @@
       display: none;
     }
   }
+  .xxl\:h-\[262px\] {
+    @media (width >= 850px) {
+      height: 262px;
+    }
+  }
   .xxl\:h-\[306px\] {
     @media (width >= 850px) {
       height: 306px;
+    }
+  }
+  .xxl\:h-\[319px\] {
+    @media (width >= 850px) {
+      height: 319px;
+    }
+  }
+  .xxl\:h-\[373px\] {
+    @media (width >= 850px) {
+      height: 373px;
     }
   }
   .xxl\:h-\[400px\] {
@@ -893,6 +1026,11 @@
   .xxl\:h-\[406px\] {
     @media (width >= 850px) {
       height: 406px;
+    }
+  }
+  .xxl\:h-\[470px\] {
+    @media (width >= 850px) {
+      height: 470px;
     }
   }
   .xxl\:h-\[567\] {
@@ -930,9 +1068,29 @@
       width: 0px;
     }
   }
+  .xxl\:w-\[32\] {
+    @media (width >= 850px) {
+      width: 32;
+    }
+  }
   .xxl\:w-\[270px\] {
     @media (width >= 850px) {
       width: 270px;
+    }
+  }
+  .xxl\:w-\[295px\] {
+    @media (width >= 850px) {
+      width: 295px;
+    }
+  }
+  .xxl\:w-\[318px\] {
+    @media (width >= 850px) {
+      width: 318px;
+    }
+  }
+  .xxl\:w-\[560px\] {
+    @media (width >= 850px) {
+      width: 560px;
     }
   }
   .xxl\:w-\[580px\] {
@@ -948,6 +1106,11 @@
   .xxl\:w-\[670px\] {
     @media (width >= 850px) {
       width: 670px;
+    }
+  }
+  .xxl\:w-\[px\] {
+    @media (width >= 850px) {
+      width: px;
     }
   }
   .xxl\:text-2xl {
