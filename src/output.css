@@ -10,6 +10,7 @@
     --color-green-50: oklch(98.2% 0.018 155.826);
     --color-green-500: oklch(72.3% 0.219 149.579);
     --color-green-600: oklch(62.7% 0.194 149.214);
+    --color-green-700: oklch(52.7% 0.154 150.069);
     --color-blue-800: oklch(42.4% 0.199 265.638);
     --color-blue-900: oklch(37.9% 0.146 265.522);
     --color-white: #fff;
@@ -24,6 +25,7 @@
     --text-6xl--line-height: 1;
     --font-weight-bold: 700;
     --radius-2xl: 1rem;
+    --radius-3xl: 1.5rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -213,6 +215,9 @@
   .h-9 {
     height: calc(var(--spacing) * 9);
   }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
@@ -236,6 +241,18 @@
   }
   .h-\[600px\] {
     height: 600px;
+  }
+  .h-\[1000px\] {
+    height: 1000px;
+  }
+  .h-\[2000px\] {
+    height: 2000px;
+  }
+  .h-\[3000px\] {
+    height: 3000px;
+  }
+  .h-\[4000px\] {
+    height: 4000px;
   }
   .w-3 {
     width: calc(var(--spacing) * 3);
@@ -306,9 +323,15 @@
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-green-600 {
+    border-color: var(--color-green-600);
   }
   .bg-green-50 {
     background-color: var(--color-green-50);
@@ -362,6 +385,12 @@
     font-size: var(--text-6xl);
     line-height: var(--tw-leading, var(--text-6xl--line-height));
   }
+  .text-\[10px\] {
+    font-size: 10px;
+  }
+  .text-\[13px\] {
+    font-size: 13px;
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -378,6 +407,9 @@
   .text-green-600 {
     color: var(--color-green-600);
   }
+  .text-green-700 {
+    color: var(--color-green-700);
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -390,6 +422,9 @@
   .opacity-\[0\.5\] {
     opacity: 0.5;
   }
+  .opacity-\[0\.9\] {
+    opacity: 0.9;
+  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
@@ -399,9 +434,19 @@
       margin: calc(var(--spacing) * 0);
     }
   }
+  .xs\:m-auto {
+    @media (width >= 350px) {
+      margin: auto;
+    }
+  }
   .xs\:mt-10 {
     @media (width >= 350px) {
       margin-top: calc(var(--spacing) * 10);
+    }
+  }
+  .xs\:mt-\[00px\] {
+    @media (width >= 350px) {
+      margin-top: 00px;
     }
   }
   .xs\:mt-\[20px\] {
@@ -419,9 +464,44 @@
       margin-top: 100px;
     }
   }
+  .xs\:mt-\[190px\] {
+    @media (width >= 350px) {
+      margin-top: 190px;
+    }
+  }
   .xs\:mt-\[200px\] {
     @media (width >= 350px) {
       margin-top: 200px;
+    }
+  }
+  .xs\:mt-\[250px\] {
+    @media (width >= 350px) {
+      margin-top: 250px;
+    }
+  }
+  .xs\:mt-\[400px\] {
+    @media (width >= 350px) {
+      margin-top: 400px;
+    }
+  }
+  .xs\:mt-\[500px\] {
+    @media (width >= 350px) {
+      margin-top: 500px;
+    }
+  }
+  .xs\:mt-\[600px\] {
+    @media (width >= 350px) {
+      margin-top: 600px;
+    }
+  }
+  .xs\:mt-\[1000px\] {
+    @media (width >= 350px) {
+      margin-top: 1000px;
+    }
+  }
+  .xs\:mt-\[2000px\] {
+    @media (width >= 350px) {
+      margin-top: 2000px;
     }
   }
   .xs\:block {
@@ -536,6 +616,36 @@
       margin-top: 200px;
     }
   }
+  .xl\:mt-\[230px\] {
+    @media (width >= 600px) {
+      margin-top: 230px;
+    }
+  }
+  .xl\:mt-\[250px\] {
+    @media (width >= 600px) {
+      margin-top: 250px;
+    }
+  }
+  .xl\:mt-\[600px\] {
+    @media (width >= 600px) {
+      margin-top: 600px;
+    }
+  }
+  .xl\:mt-\[900px\] {
+    @media (width >= 600px) {
+      margin-top: 900px;
+    }
+  }
+  .xl\:mt-\[1000px\] {
+    @media (width >= 600px) {
+      margin-top: 1000px;
+    }
+  }
+  .xl\:mt-\[1200px\] {
+    @media (width >= 600px) {
+      margin-top: 1200px;
+    }
+  }
   .xl\:block {
     @media (width >= 600px) {
       display: block;
@@ -621,6 +731,11 @@
       width: 380px;
     }
   }
+  .xl\:flex-nowrap {
+    @media (width >= 600px) {
+      flex-wrap: nowrap;
+    }
+  }
   .xl\:flex-wrap {
     @media (width >= 600px) {
       flex-wrap: wrap;
@@ -663,6 +778,21 @@
       @media (width >= 600px) {
         display: block;
       }
+    }
+  }
+  .xxl\:m-auto {
+    @media (width >= 850px) {
+      margin: auto;
+    }
+  }
+  .xxl\:mt-\[200px\] {
+    @media (width >= 850px) {
+      margin-top: 200px;
+    }
+  }
+  .xxl\:mt-\[250px\] {
+    @media (width >= 850px) {
+      margin-top: 250px;
     }
   }
   .xxl\:block {
