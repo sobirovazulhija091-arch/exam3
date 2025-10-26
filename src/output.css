@@ -21,13 +21,17 @@
     --color-blue-800: oklch(42.4% 0.199 265.638);
     --color-blue-900: oklch(37.9% 0.146 265.522);
     --color-purple-400: oklch(71.4% 0.203 305.504);
+    --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-300: oklch(87.2% 0.01 258.338);
+    --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
@@ -223,6 +227,12 @@
   .mt-\[50px\] {
     margin-top: 50px;
   }
+  .mt-\[50xp\] {
+    margin-top: 50xp;
+  }
+  .mt-\[59\] {
+    margin-top: 59;
+  }
   .mt-\[80px\] {
     margin-top: 80px;
   }
@@ -249,6 +259,9 @@
   }
   .h-12 {
     height: calc(var(--spacing) * 12);
+  }
+  .h-\[5\] {
+    height: 5;
   }
   .h-\[30px\] {
     height: 30px;
@@ -277,8 +290,14 @@
   .h-\[401px\] {
     height: 401px;
   }
+  .h-\[540px\] {
+    height: 540px;
+  }
   .h-\[600px\] {
     height: 600px;
+  }
+  .h-\[708px\] {
+    height: 708px;
   }
   .h-\[892px\] {
     height: 892px;
@@ -321,6 +340,9 @@
   }
   .w-\[350px\] {
     width: 350px;
+  }
+  .w-\[370px\] {
+    width: 370px;
   }
   .w-\[900px\] {
     width: 900px;
@@ -407,8 +429,14 @@
   .bg-blue-400 {
     background-color: var(--color-blue-400);
   }
+  .bg-gray-100 {
+    background-color: var(--color-gray-100);
+  }
   .bg-gray-300 {
     background-color: var(--color-gray-300);
+  }
+  .bg-gray-400 {
+    background-color: var(--color-gray-400);
   }
   .bg-green-400 {
     background-color: var(--color-green-400);
@@ -453,6 +481,10 @@
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
   .text-5xl {
     font-size: var(--text-5xl);
@@ -505,6 +537,9 @@
   }
   .opacity-\[0\.7\] {
     opacity: 0.7;
+  }
+  .opacity-\[0\.8\] {
+    opacity: 0.8;
   }
   .opacity-\[0\.9\] {
     opacity: 0.9;
