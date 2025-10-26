@@ -986,6 +986,11 @@
       height: 325px;
     }
   }
+  .xxl\:h-\[326px\] {
+    @media (width >= 850px) {
+      height: 326px;
+    }
+  }
   .xxl\:h-\[400px\] {
     @media (width >= 850px) {
       height: 400px;
