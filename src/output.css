@@ -502,6 +502,9 @@
   .text-blue-900 {
     color: var(--color-blue-900);
   }
+  .text-green-400 {
+    color: var(--color-green-400);
+  }
   .text-green-500 {
     color: var(--color-green-500);
   }
@@ -556,6 +559,11 @@
       margin: calc(var(--spacing) * 0);
     }
   }
+  .xs\:mt-0 {
+    @media (width >= 350px) {
+      margin-top: calc(var(--spacing) * 0);
+    }
+  }
   .xs\:mt-5 {
     @media (width >= 350px) {
       margin-top: calc(var(--spacing) * 5);
@@ -589,6 +597,21 @@
   .xs\:mt-\[1200px\] {
     @media (width >= 350px) {
       margin-top: 1200px;
+    }
+  }
+  .xs\:mt-\[2000px\] {
+    @media (width >= 350px) {
+      margin-top: 2000px;
+    }
+  }
+  .xs\:mt-\[3000p\] {
+    @media (width >= 350px) {
+      margin-top: 3000p;
+    }
+  }
+  .xs\:mt-\[3000px\] {
+    @media (width >= 350px) {
+      margin-top: 3000px;
     }
   }
   .xs\:block {
@@ -707,6 +730,16 @@
       line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
+  .xl\:mt-0 {
+    @media (width >= 600px) {
+      margin-top: calc(var(--spacing) * 0);
+    }
+  }
+  .xl\:mt-\[0px\] {
+    @media (width >= 600px) {
+      margin-top: 0px;
+    }
+  }
   .xl\:mt-\[100px\] {
     @media (width >= 600px) {
       margin-top: 100px;
@@ -720,6 +753,11 @@
   .xl\:mt-\[400px\] {
     @media (width >= 600px) {
       margin-top: 400px;
+    }
+  }
+  .xl\:mt-\[1000px\] {
+    @media (width >= 600px) {
+      margin-top: 1000px;
     }
   }
   .xl\:mt-\[1200px\] {
