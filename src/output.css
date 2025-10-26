@@ -209,6 +209,12 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
+<<<<<<< HEAD
+=======
+  .mt-40 {
+    margin-top: calc(var(--spacing) * 40);
+  }
+>>>>>>> 40f6f81fddd33df133c7639da70b8e4120b4f2f3
   .mt-\[30px\] {
     margin-top: 30px;
   }
@@ -227,6 +233,12 @@
   .flex {
     display: flex;
   }
+<<<<<<< HEAD
+=======
+  .table {
+    display: table;
+  }
+>>>>>>> 40f6f81fddd33df133c7639da70b8e4120b4f2f3
   .h-9 {
     height: calc(var(--spacing) * 9);
   }
@@ -257,6 +269,12 @@
   .h-\[262px\] {
     height: 262px;
   }
+<<<<<<< HEAD
+=======
+  .h-\[360px\] {
+    height: 360px;
+  }
+>>>>>>> 40f6f81fddd33df133c7639da70b8e4120b4f2f3
   .h-\[362px\] {
     height: 362px;
   }
@@ -287,6 +305,12 @@
   .w-20 {
     width: calc(var(--spacing) * 20);
   }
+<<<<<<< HEAD
+=======
+  .w-\[70\%\] {
+    width: 70%;
+  }
+>>>>>>> 40f6f81fddd33df133c7639da70b8e4120b4f2f3
   .w-\[70px\] {
     width: 70px;
   }
@@ -335,6 +359,18 @@
   .w-full {
     width: 100%;
   }
+<<<<<<< HEAD
+=======
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+>>>>>>> 40f6f81fddd33df133c7639da70b8e4120b4f2f3
   .items-center {
     align-items: center;
   }
@@ -472,6 +508,9 @@
   .text-blue-900 {
     color: var(--color-blue-900);
   }
+  .text-green-400 {
+    color: var(--color-green-400);
+  }
   .text-green-500 {
     color: var(--color-green-500);
   }
@@ -502,6 +541,13 @@
   .opacity-\[0\.9\] {
     opacity: 0.9;
   }
+<<<<<<< HEAD
+=======
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+>>>>>>> 40f6f81fddd33df133c7639da70b8e4120b4f2f3
   .hover\:text-green-300 {
     &:hover {
       @media (hover: hover) {
@@ -520,6 +566,11 @@
   .xs\:m-0 {
     @media (width >= 350px) {
       margin: calc(var(--spacing) * 0);
+    }
+  }
+  .xs\:mt-0 {
+    @media (width >= 350px) {
+      margin-top: calc(var(--spacing) * 0);
     }
   }
   .xs\:mt-5 {
@@ -555,6 +606,21 @@
   .xs\:mt-\[1200px\] {
     @media (width >= 350px) {
       margin-top: 1200px;
+    }
+  }
+  .xs\:mt-\[2000px\] {
+    @media (width >= 350px) {
+      margin-top: 2000px;
+    }
+  }
+  .xs\:mt-\[3000p\] {
+    @media (width >= 350px) {
+      margin-top: 3000p;
+    }
+  }
+  .xs\:mt-\[3000px\] {
+    @media (width >= 350px) {
+      margin-top: 3000px;
     }
   }
   .xs\:block {
@@ -673,6 +739,19 @@
       line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
+<<<<<<< HEAD
+=======
+  .xl\:mt-0 {
+    @media (width >= 600px) {
+      margin-top: calc(var(--spacing) * 0);
+    }
+  }
+  .xl\:mt-\[0px\] {
+    @media (width >= 600px) {
+      margin-top: 0px;
+    }
+  }
+>>>>>>> 40f6f81fddd33df133c7639da70b8e4120b4f2f3
   .xl\:mt-\[100px\] {
     @media (width >= 600px) {
       margin-top: 100px;
@@ -688,6 +767,14 @@
       margin-top: 400px;
     }
   }
+<<<<<<< HEAD
+=======
+  .xl\:mt-\[1000px\] {
+    @media (width >= 600px) {
+      margin-top: 1000px;
+    }
+  }
+>>>>>>> 40f6f81fddd33df133c7639da70b8e4120b4f2f3
   .xl\:mt-\[1200px\] {
     @media (width >= 600px) {
       margin-top: 1200px;
@@ -733,6 +820,14 @@
       height: 306px;
     }
   }
+<<<<<<< HEAD
+=======
+  .xl\:h-\[368px\] {
+    @media (width >= 600px) {
+      height: 368px;
+    }
+  }
+>>>>>>> 40f6f81fddd33df133c7639da70b8e4120b4f2f3
   .xl\:h-\[373px\] {
     @media (width >= 600px) {
       height: 373px;
@@ -808,6 +903,14 @@
       width: 445px;
     }
   }
+<<<<<<< HEAD
+=======
+  .xl\:w-\[472px\] {
+    @media (width >= 600px) {
+      width: 472px;
+    }
+  }
+>>>>>>> 40f6f81fddd33df133c7639da70b8e4120b4f2f3
   .xl\:w-\[606px\] {
     @media (width >= 600px) {
       width: 606px;
@@ -904,6 +1007,14 @@
       height: 325px;
     }
   }
+<<<<<<< HEAD
+=======
+  .xxl\:h-\[326px\] {
+    @media (width >= 850px) {
+      height: 326px;
+    }
+  }
+>>>>>>> 40f6f81fddd33df133c7639da70b8e4120b4f2f3
   .xxl\:h-\[400px\] {
     @media (width >= 850px) {
       height: 400px;
@@ -914,6 +1025,14 @@
       height: 406px;
     }
   }
+<<<<<<< HEAD
+=======
+  .xxl\:h-\[450\] {
+    @media (width >= 850px) {
+      height: 450;
+    }
+  }
+>>>>>>> 40f6f81fddd33df133c7639da70b8e4120b4f2f3
   .xxl\:h-\[569px\] {
     @media (width >= 850px) {
       height: 569px;
@@ -939,6 +1058,14 @@
       height: 792px;
     }
   }
+<<<<<<< HEAD
+=======
+  .xxl\:h-\[1800px\] {
+    @media (width >= 850px) {
+      height: 1800px;
+    }
+  }
+>>>>>>> 40f6f81fddd33df133c7639da70b8e4120b4f2f3
   .xxl\:w-\[270px\] {
     @media (width >= 850px) {
       width: 270px;
@@ -984,6 +1111,14 @@
       width: 807px;
     }
   }
+<<<<<<< HEAD
+=======
+  .xxl\:w-xl {
+    @media (width >= 850px) {
+      width: var(--container-xl);
+    }
+  }
+>>>>>>> 40f6f81fddd33df133c7639da70b8e4120b4f2f3
   .xxl\:flex-none {
     @media (width >= 850px) {
       flex: none;
@@ -1010,6 +1145,14 @@
   syntax: "*";
   inherits: false;
 }
+<<<<<<< HEAD
+=======
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+>>>>>>> 40f6f81fddd33df133c7639da70b8e4120b4f2f3
 @property --tw-shadow {
   syntax: "*";
   inherits: false;
@@ -1080,6 +1223,10 @@
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
       --tw-font-weight: initial;
+<<<<<<< HEAD
+=======
+      --tw-outline-style: solid;
+>>>>>>> 40f6f81fddd33df133c7639da70b8e4120b4f2f3
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;
