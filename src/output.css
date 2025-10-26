@@ -25,6 +25,7 @@
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-2xl: 1.5rem;
@@ -291,6 +292,12 @@
   .h-\[262px\] {
     height: 262px;
   }
+  .h-\[325px\] {
+    height: 325px;
+  }
+  .h-\[362px\] {
+    height: 362px;
+  }
   .h-\[373px\] {
     height: 373px;
   }
@@ -305,6 +312,9 @@
   }
   .h-\[540px\] {
     height: 540px;
+  }
+  .h-\[582px\] {
+    height: 582px;
   }
   .h-\[600px\] {
     height: 600px;
@@ -399,6 +409,9 @@
   .w-\[900px\] {
     width: 900px;
   }
+  .w-\[full\] {
+    width: full;
+  }
   .w-\[px50px\] {
     width: px50px;
   }
@@ -469,6 +482,9 @@
   .bg-\[\#F1F5F8\] {
     background-color: #F1F5F8;
   }
+  .bg-black {
+    background-color: var(--color-black);
+  }
   .bg-blue-100 {
     background-color: var(--color-blue-100);
   }
@@ -489,6 +505,9 @@
   }
   .bg-gray-400 {
     background-color: var(--color-gray-400);
+  }
+  .bg-green-50 {
+    background-color: var(--color-green-50);
   }
   .bg-green-400 {
     background-color: var(--color-green-400);
@@ -707,6 +726,11 @@
       display: block;
     }
   }
+  .xs\:flex {
+    @media (width >= 350px) {
+      display: flex;
+    }
+  }
   .xs\:hidden {
     @media (width >= 350px) {
       display: none;
@@ -715,6 +739,16 @@
   .xs\:h-\[1px\] {
     @media (width >= 350px) {
       height: 1px;
+    }
+  }
+  .xs\:h-\[9\] {
+    @media (width >= 350px) {
+      height: 9;
+    }
+  }
+  .xs\:h-\[76\] {
+    @media (width >= 350px) {
+      height: 76;
     }
   }
   .xs\:h-\[100px\] {
@@ -737,6 +771,11 @@
       height: 270px;
     }
   }
+  .xs\:h-\[307px\] {
+    @media (width >= 350px) {
+      height: 307px;
+    }
+  }
   .xs\:h-\[319px\] {
     @media (width >= 350px) {
       height: 319px;
@@ -750,6 +789,16 @@
   .xs\:h-\[518px\] {
     @media (width >= 350px) {
       height: 518px;
+    }
+  }
+  .xs\:h-\[762px\] {
+    @media (width >= 350px) {
+      height: 762px;
+    }
+  }
+  .xs\:h-\[968px\] {
+    @media (width >= 350px) {
+      height: 968px;
     }
   }
   .xs\:h-\[1000px\] {
@@ -812,6 +861,11 @@
       height: 2060px;
     }
   }
+  .xs\:w-\[307px\] {
+    @media (width >= 350px) {
+      width: 307px;
+    }
+  }
   .xs\:w-\[318px\] {
     @media (width >= 350px) {
       width: 318px;
@@ -835,6 +889,16 @@
   .xs\:w-\[388px\] {
     @media (width >= 350px) {
       width: 388px;
+    }
+  }
+  .xs\:w-\[420px\] {
+    @media (width >= 350px) {
+      width: 420px;
+    }
+  }
+  .xs\:w-\[520px\] {
+    @media (width >= 350px) {
+      width: 520px;
     }
   }
   .xs\:w-full {
@@ -968,6 +1032,11 @@
       height: 306px;
     }
   }
+  .xl\:h-\[307px\] {
+    @media (width >= 600px) {
+      height: 307px;
+    }
+  }
   .xl\:h-\[373px\] {
     @media (width >= 600px) {
       height: 373px;
@@ -986,6 +1055,16 @@
   .xl\:h-\[539px\] {
     @media (width >= 600px) {
       height: 539px;
+    }
+  }
+  .xl\:h-\[579px\] {
+    @media (width >= 600px) {
+      height: 579px;
+    }
+  }
+  .xl\:h-\[582px\] {
+    @media (width >= 600px) {
+      height: 582px;
     }
   }
   .xl\:h-\[800px\] {
@@ -1033,14 +1112,39 @@
       height: 1800px;
     }
   }
+  .xl\:h-\[px\] {
+    @media (width >= 600px) {
+      height: px;
+    }
+  }
+  .xl\:h-px {
+    @media (width >= 600px) {
+      height: 1px;
+    }
+  }
   .xl\:w-\[0px\] {
     @media (width >= 600px) {
       width: 0px;
     }
   }
+  .xl\:w-\[06px\] {
+    @media (width >= 600px) {
+      width: 06px;
+    }
+  }
   .xl\:w-\[60px\] {
     @media (width >= 600px) {
       width: 60px;
+    }
+  }
+  .xl\:w-\[207px\] {
+    @media (width >= 600px) {
+      width: 207px;
+    }
+  }
+  .xl\:w-\[307px\] {
+    @media (width >= 600px) {
+      width: 307px;
     }
   }
   .xl\:w-\[331px\] {
@@ -1073,9 +1177,24 @@
       width: 380px;
     }
   }
+  .xl\:w-\[406px\] {
+    @media (width >= 600px) {
+      width: 406px;
+    }
+  }
   .xl\:w-\[445px\] {
     @media (width >= 600px) {
       width: 445px;
+    }
+  }
+  .xl\:w-\[506px\] {
+    @media (width >= 600px) {
+      width: 506px;
+    }
+  }
+  .xl\:w-\[606px\] {
+    @media (width >= 600px) {
+      width: 606px;
     }
   }
   .xl\:w-\[650px\] {
@@ -1096,6 +1215,16 @@
   .xl\:w-\[6500px\] {
     @media (width >= 600px) {
       width: 6500px;
+    }
+  }
+  .xl\:w-full {
+    @media (width >= 600px) {
+      width: 100%;
+    }
+  }
+  .xl\:flex-col {
+    @media (width >= 600px) {
+      flex-direction: column;
     }
   }
   .xl\:flex-nowrap {
@@ -1154,6 +1283,11 @@
       height: 1px;
     }
   }
+  .xxl\:h-\[5px\] {
+    @media (width >= 850px) {
+      height: 5px;
+    }
+  }
   .xxl\:h-\[100px\] {
     @media (width >= 850px) {
       height: 100px;
@@ -1184,6 +1318,16 @@
       height: 319px;
     }
   }
+  .xxl\:h-\[325px\] {
+    @media (width >= 850px) {
+      height: 325px;
+    }
+  }
+  .xxl\:h-\[373px\] {
+    @media (width >= 850px) {
+      height: 373px;
+    }
+  }
   .xxl\:h-\[400px\] {
     @media (width >= 850px) {
       height: 400px;
@@ -1207,6 +1351,11 @@
   .xxl\:h-\[569px\] {
     @media (width >= 850px) {
       height: 569px;
+    }
+  }
+  .xxl\:h-\[582px\] {
+    @media (width >= 850px) {
+      height: 582px;
     }
   }
   .xxl\:h-\[700px\] {
@@ -1234,6 +1383,11 @@
       height: 892px;
     }
   }
+  .xxl\:w-\[80\] {
+    @media (width >= 850px) {
+      width: 80;
+    }
+  }
   .xxl\:w-\[270px\] {
     @media (width >= 850px) {
       width: 270px;
@@ -1252,6 +1406,11 @@
   .xxl\:w-\[350px\] {
     @media (width >= 850px) {
       width: 350px;
+    }
+  }
+  .xxl\:w-\[373px\] {
+    @media (width >= 850px) {
+      width: 373px;
     }
   }
   .xxl\:w-\[560px\] {
@@ -1274,9 +1433,29 @@
       width: 660px;
     }
   }
+  .xxl\:w-\[807px\] {
+    @media (width >= 850px) {
+      width: 807px;
+    }
+  }
+  .xxl\:w-\[807pz\] {
+    @media (width >= 850px) {
+      width: 807pz;
+    }
+  }
+  .xxl\:w-\[900px\] {
+    @media (width >= 850px) {
+      width: 900px;
+    }
+  }
   .xxl\:flex-none {
     @media (width >= 850px) {
       flex: none;
+    }
+  }
+  .xxl\:flex-col {
+    @media (width >= 850px) {
+      flex-direction: column;
     }
   }
   .xxl\:flex-nowrap {
@@ -1293,6 +1472,13 @@
     @media (width >= 850px) {
       font-size: var(--text-6xl);
       line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
+  .xs\:xxl\:h-\[582px\] {
+    @media (width >= 350px) {
+      @media (width >= 850px) {
+        height: 582px;
+      }
     }
   }
 }
